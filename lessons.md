@@ -41,3 +41,11 @@
     * Android Gradle Plugin: `9.0.1`
     * Kotlin: `2.3.20`
     * Google Services Plugin: `4.4.4`
+
+### 📌 الدرس 4: متطلبات حزمة `flutter_localizations` وإعدادات `firebase_options`
+* **النمط الخاطئ (Anti-pattern)**:
+  استخدام `GlobalMaterialLocalizations` أو استدعاء `DefaultFirebaseOptions.currentPlatform` دون إدراج تبعية `flutter_localizations: sdk: flutter` في `pubspec.yaml` ودون توليد ملف `firebase_options.dart` مع `google-services.json`.
+* **النمط الصحيح (Approved Pattern)**:
+  1. إضافة `flutter_localizations` كـ SDK dependency دائماً في `pubspec.yaml` عند استخدام اللغات والتعريب وتحديد `supportedLocales`.
+  2. تسجيل تطبيق المنصة بالـ applicationId المطابق في مشروع Firebase وتوليد ملف `google-services.json` وملف `firebase_options.dart` المخصص، مع تفعيل إضافة `com.google.gms.google-services` في `build.gradle.kts`.
+

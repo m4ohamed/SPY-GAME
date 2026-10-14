@@ -18,12 +18,18 @@
 - [x] إنشاء وتهيئة ملفات `firebase.json` و `.firebaserc` لمشروع `saramomry`.
 - [x] نشر قواعد Firestore بنجاح إلى مشروع Firebase (`saramomry`).
 - [x] نشر قواعد Realtime Database بنجاح إلى قاعدة `saramomry-default-rtdb`.
+- [x] تسجيل تطبيق Android في Firebase لمشروع `saramomry` بالمعرّف `com.spygame.app` وتوليد `google-services.json`.
+- [x] تفعيل إضافة `com.google.gms.google-services` في `android/app/build.gradle.kts`.
+- [x] توليد ملف [firebase_options.dart](file:///e:/spy%20game/app/lib/firebase_options.dart) لمنصتي Android و Web.
+- [x] إضافة حزمة `flutter_localizations` إلى `pubspec.yaml` وحل جميع مشاكل التعريب.
+- [x] ربط سمات التصميم [AppTheme](file:///e:/spy%20game/app/lib/features/spy_game/presentation/theme/app_theme.dart) في [main.dart](file:///e:/spy%20game/app/lib/main.dart).
 - [x] توثيق المشاكل والحلول في [error.md](./error.md) والدروس في [lessons.md](./lessons.md).
 
 ## 🔄 المهام الحالية
-- [ ] جاهز لإنشاء تطبيق Android في Firebase وتوليد `google-services.json` إذا رغبت.
+- [ ] تهيئة OneSignal ونشر Cloud Functions (`spy_game_functions`).
+- [ ] اختبار بناء التطبيق `flutter build apk --release`.
 
 ## 🔮 المهام المستقبلية
-- [ ] إضافة ملف `google-services.json` للـ Android app.
-- [ ] تهيئة OneSignal في التطبيق ونشر Cloud Functions (`firebase deploy --only functions`).
-- [ ] ربط شاشات `features/spy_game` بنقطة الدخول الرئيسية `main.dart`.
+- [ ] نشر Cloud Functions (`firebase deploy --only functions`).
+- [ ] إطلاق واختبار دورة اللعبة الكاملة (إنشاء غرفة، انضمام، تصويت، إشعارات).
+
