@@ -1,0 +1,50 @@
+rules_version = '2';
+
+// Who Is the Spy: all game state is written by Cloud Functions (the Admin SDK
+// bypasses these rules). Clients can only read what they are allowed to see.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isMember(roomId) {
+      return signedIn()
+        && exists(/databases/$(database)/documents/rooms/$(roomId)/players/$(request.auth.uid));
+    }
+
+    match /rooms/{roomId} {
+      // Public room state: phase, turn, timer end, vote count, final reveal.
+      allow read: if isMember(roomId);
+      allow write: if false;
+
+      match /players/{uid} {
+        allow read: if isMember(roomId);
+        allow write: if false;
+      }
+
+      match /clues/{clueId} {
+        allow read: if isMember(roomId);
+        allow write: if false;
+      }
+
+      // Role and secret word: only the owner can read it, only the server writes it.
+      match /secrets/{uid} {
+        allow get: if signedIn() && request.auth.uid == uid;
+        allow list: if false;
+        allow write: if false;
+      }
+
+      // Individual votes stay hidden; the server publishes the tally in room.reveal.
+      match /votes/{uid} {
+        allow read, write: if false;
+      }
+
+      // The full assignment (spies, both words). Server only, never readable.
+      match /private/{docId} {
+        allow read, write: if false;
+      }
+    }
+  }
+}

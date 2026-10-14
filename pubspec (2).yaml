@@ -1,0 +1,29 @@
+name: spy_game_app
+description: Who Is the Spy, an online party game.
+publish_to: none
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.3.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_riverpod: ^2.5.1
+  firebase_core: any
+  firebase_auth: any
+  cloud_firestore: any
+  cloud_functions: any
+  onesignal_flutter: ^5.3.0
+  spy_game_domain:
+    path: ../packages/spy_game_domain
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: any
+
+flutter:
+  uses-material-design: true

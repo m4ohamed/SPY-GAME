@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "417860439524",
+    "firebase_url": "https://saramomry-default-rtdb.firebaseio.com",
+    "project_id": "saramomry",
+    "storage_bucket": "saramomry.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417860439524:android:6eee8e36718061a5cf4bf1",
+        "android_client_info": {
+          "package_name": "com.example.myapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417860439524-nkfu84goqj0nvutlk70v4sje5gcnj33h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhSc1P8jbflnBBxaLU0-NMCDaSShXpO4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417860439524-nkfu84goqj0nvutlk70v4sje5gcnj33h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417860439524:android:21dc16c6dc179338cf4bf1",
+        "android_client_info": {
+          "package_name": "com.m4ohamed1.saramemory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417860439524-qi13gdm2dmg8f383v757pmqq9q0usmgs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.m4ohamed1.saramemory",
+            "certificate_hash": "35f317bc281dd5275110becdc0559703f83417dc"
+          }
+        },
+        {
+          "client_id": "417860439524-nkfu84goqj0nvutlk70v4sje5gcnj33h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhSc1P8jbflnBBxaLU0-NMCDaSShXpO4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417860439524-nkfu84goqj0nvutlk70v4sje5gcnj33h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417860439524:android:f4528e74eeb82cfecf4bf1",
+        "android_client_info": {
+          "package_name": "com.spygame.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417860439524-nkfu84goqj0nvutlk70v4sje5gcnj33h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhSc1P8jbflnBBxaLU0-NMCDaSShXpO4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417860439524-nkfu84goqj0nvutlk70v4sje5gcnj33h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
