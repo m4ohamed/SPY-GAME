@@ -23,6 +23,7 @@
 - [x] توليد ملف [firebase_options.dart](file:///e:/spy%20game/app/lib/firebase_options.dart) لمنصتي Android و Web.
 - [x] إضافة حزمة `flutter_localizations` إلى `pubspec.yaml` وحل جميع مشاكل التعريب.
 - [x] ربط سمات التصميم [AppTheme](file:///e:/spy%20game/app/lib/features/spy_game/presentation/theme/app_theme.dart) في [main.dart](file:///e:/spy%20game/app/lib/main.dart).
+- [x] ربط ونشر المستودع بنجاح إلى GitHub على [m4ohamed/SPY-GAME](https://github.com/m4ohamed/SPY-GAME).
 - [x] توثيق المشاكل والحلول في [error.md](./error.md) والدروس في [lessons.md](./lessons.md).
 
 ## 🔄 المهام الحالية
